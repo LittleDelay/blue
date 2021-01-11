@@ -1,0 +1,33 @@
+server:
+  port: 30800
+  tomcat:
+    max-threads: 1000
+    min-spare-threads: 100
+
+spring:
+  application:
+    name: blue-biz-service
+
+mc:
+  track-mode:
+
+---
+
+spring:
+  profiles: peer1
+server:
+  port: 30800
+
+---
+
+spring:
+  profiles: peer2
+server:
+  port: 30801
+
+---
+
+spring:
+  profiles: peer3
+server:
+  port: 30802

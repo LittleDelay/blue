@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>blue</artifactId>
+    <groupId>com.lxs.blue</groupId>
+    <version>1.0.0</version>
+  </parent>
+  <groupId>com.lxs.blue</groupId>
+  <artifactId>blue-biz-service</artifactId>
+  <version>1.0.0</version>
+
+  <name>blue-biz-service</name>
+
+  <properties>
+    <blue.common.version>1.0.0</blue.common.version>
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>com.lxs.blue</groupId>
+      <artifactId>blue-common</artifactId>
+      <version>${blue.common.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>
